@@ -1,0 +1,49 @@
+.App {
+  display: block;
+  text-align: center;
+  border: 2px solid silver;
+  border-radius:  5px;
+  height: 750px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 5%;
+}
+
+.Left, .Right {
+  height: 100%;
+  width: 49.8%;
+  margin: auto;
+  display: inline-block;
+}
+
+.Top {
+  width: 99.8%;
+  height: 20%;
+  /* margin: auto; */
+  border: 1px solid black;
+}
+
+.Bottom {
+  width: 99.8%;
+  height: 80%;
+  /* margin: auto; */
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+.Divider {
+  width: 2px;
+  height: 100%;
+  display: inline-block;
+  background-color: silver;
+}
+
+.ProgressBar {
+  background: #0c0 none 0 0 no-repeat;
+  border-radius: 5px;
+}
+
+td {
+  padding: 2px;
+}
