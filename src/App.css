@@ -40,8 +40,13 @@
 }
 
 .ProgressBar {
-  background: #0c0 none 0 0 no-repeat;
+  background: #edf3ed none 0 0 no-repeat;
   border-radius: 5px;
+}
+
+.ProgressBar div {
+  color: transparent;
+  background: #0c0 none 0 0 no-repeat;
 }
 
 td {
