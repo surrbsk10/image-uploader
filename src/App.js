@@ -85,7 +85,9 @@ class App extends Component {
         </div>
 
         <div className='Right'>
-
+          <div className = 'ImageViewer'>
+            
+          </div>
         </div>
       </div>
     );
