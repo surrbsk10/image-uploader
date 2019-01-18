@@ -42,18 +42,17 @@ class App extends Component {
     let { files } = this.state;
     for(let i=0; i<files.length; i++) {
       Request
-        .post('http://192.168.43.9:8080/api/uploadFiles')
-        .set('Access-Control-Allow-Origin', '*')
+        .post('http://localhost:9090/saveimage')
         .attach('file', files[i])
         .on('progress', e => {
-            if(e.direction == 'upload') {
+            if(e.direction === 'upload') {
               let { progressArray } = this.state;
               progressArray[i] = e.percent;
               this.setState({ progressArray });
               console.log(e.direction, 'progress: ', e.percent);
             }
          })
-        .end((err, res) => { console.log('Resopsne', res, '\nError', err); });
+        .end((err, res) => { console.log('Response', res, '\nError', err); });
     }
   }
 
@@ -109,7 +108,7 @@ class App extends Component {
 
         <div className='Right'>
           <div className = 'ImageViewer'>
-            
+
           </div>
         </div>
       </div>
